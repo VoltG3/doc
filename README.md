@@ -21,8 +21,8 @@ This is an example Spring Boot application that uses Java, and communicates with
 
 <table>
   <tr>
-    <td><img src="[https://github.com/VoltG3/spring_boot_biosquare/blob/master/ReadME_img/](https://github.com/VoltG3/doc/blob/master/readme_img/spring_boot_biosquare/)img001.png" width="500" alt="img"></td>
-    <td><img src="[https://github.com/VoltG3/spring_boot_biosquare/blob/master/ReadME_img/](https://github.com/VoltG3/doc/blob/master/readme_img/spring_boot_biosquare/)img002.png" width="500" alt="img"></td>
+    <td><img src="https://github.com/VoltG3/doc/blob/master/readme_img/spring_boot_biosquare/img001.png" width="500" alt="img"></td>
+    <td><img src="https://github.com/VoltG3/doc/blob/master/readme_img/spring_boot_biosquare/img002.png" width="500" alt="img"></td>
   <tr>
  </table>
 
