@@ -14,7 +14,7 @@ This is an example Spring Boot application that uses Java, and communicates with
 | [biosquare-v0.0](https://github.com/VoltG3/spring_boot_biosquare//releases/tag/biosquare-v3.0) | [empty template](#chapter-biosquare-v00)                                  |
 | [biosquare-v1.0](https://github.com/VoltG3/spring_boot_biosquare/releases/tag/biosquare-v3.0) | [isAppOnloaded controller](#chapter-biosquare-v10) 
 | [biosquare-v2.0](https://github.com/VoltG3/spring_boot_biosquare/releases/tag/biosquare-v3.0) | [liquibase migration](#chapter-biosquare-v20) |
-| [biosquare-v3.0](https://github.com/VoltG3/spring_boot_biosquare/releases/tag/biosquare-v3.0) | [crud](#shapter-biosquare-v30) |
+| [biosquare-v3.0](https://github.com/VoltG3/spring_boot_biosquare/releases/tag/biosquare-v3.0) | [crud](#chapter-biosquare-v30) |
 
 ### CHAPTER biosquare-v0.0
 - [ empty template ] - Project configuration example based on intelliJ IDEA
