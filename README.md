@@ -60,10 +60,10 @@ http://localhost:8080/isAppOnloaded
  </table>
  
 #### Operations examples
-##### GET all RECORDS
-Request:
+##### HTTP Method GET: all RECORDS
+Request URL:
 ```
-GET http://localhost:8080/biosquares
+http://localhost:8080/biosquares
 ```
 Response:
 ```JSON
@@ -78,10 +78,10 @@ Response:
         "landmap": "https://danoss.no/BioSquare/maps/ae.svg"
     },
 ```
-##### GET RECORD by ID
-Request:
+##### HTTP Method GET: RECORD by ID
+Request URL:
 ```
-GET http://localhost:8080/biosquares/145
+http://localhost:8080/biosquares/145
 ```
 Response:
 ```JSON
@@ -95,10 +95,10 @@ Response:
     "landmap": "https://danoss.no/BioSquare/maps/is.svg"
 }
 ```
-##### CREATE new RECORD
-Request:
+##### HTTP Metgod POST: CREATE new RECORD
+Request URL:
 ```
-POST http://localhost:8080/biosquares
+http://localhost:8080/biosquares
 ```
 Response:
 ```JSON
@@ -111,8 +111,8 @@ Response:
     "landmap": "none"
 }
 ```
-##### DELETE RECORD
-Reques:
+##### HTTP Method DELETE: RECORD by ID
+Reques URL:
 ```
 DELETE http://localhost:8080/biosquares/246
 ```
@@ -122,7 +122,7 @@ Response:
     "deleted": true
 }
 ```
-##### UPDATE RECORD under construction
+##### HTTP Method PUT: UPDATE RECORD by ID
  
 ## Preconditions
 - Linux https://ubuntu.com/
