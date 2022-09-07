@@ -35,7 +35,7 @@ http://localhost:8080/isAppOnloaded
 ```
 <table>
   <tr>
-    <td><img src="https://github.com/VoltG3/spring_boot_biosquare/blob/master/ReadME_img/img101.png" width="350" alt="img"></td>
+    <td><img src="https://github.com/VoltG3/doc/blob/master/readme_img/spring_boot_biosquare/img101.png" width="350" alt="img"></td>
   <tr>
  </table>
    
@@ -44,7 +44,7 @@ http://localhost:8080/isAppOnloaded
    
 <table>
   <tr>
-    <td><img src="https://github.com/VoltG3/spring_boot_biosquare/blob/master/ReadME_img/img201.png" width="1000" alt="img"></td>
+    <td><img src="https://github.com/VoltG3/doc/blob/master/readme_img/spring_boot_biosquare/img201.png" width="1000" alt="img"></td>
   <tr>
  </table>
  
@@ -55,7 +55,7 @@ http://localhost:8080/isAppOnloaded
    
 <table>
   <tr>
-    <td><img src="https://github.com/VoltG3/spring_boot_biosquare/blob/master/ReadME_img/img301.png" width="700" alt="img"></td>
+    <td><img src="https://github.com/VoltG3/doc/blob/master/readme_img/spring_boot_biosquare/img301.png" width="700" alt="img"></td>
   <tr>
  </table>
  
