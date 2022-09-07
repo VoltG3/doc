@@ -50,7 +50,7 @@ http://localhost:8080/isAppOnloaded
  
  > if this error message, then create directories separately, first "db", then "changelog"
  
-### CHAPTER biosquare-v2.0
+### CHAPTER biosquare-v3.0
 - [ crud ] - operations
    
 <table>
