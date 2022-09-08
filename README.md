@@ -1,4 +1,5 @@
 # Play JAVA EBean - tutorial
+Linux / IntelliJ IDEA / Java Play Frameworks / SBT / Postgress / Crud
 
 This is an example Play application that uses Java and communicates with a postgres database and also uses H2 inMemory database for test purposes via EBean
 
@@ -19,11 +20,14 @@ Step by step will look at how to add a full chapter and test it
 >>and the documentation can be found here:
 >>[https://ebean-orm.github.io/](https://ebean-orm.github.io/)
 
-### Preconditions:
-  - OpenJDK 11.0.14-zulu
-  - Postgres database via Apache2 localhost or Docker
-  - Any text editor (Visual Studio Code)
-  - SBT https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html
+### Preconditions
+- Linux https://ubuntu.com/
+- IntelliJ IDEA https://www.jetbrains.com/idea/
+- SdkMan (java OpenJDK 11.0.14-zulu) https://sdkman.io/
+- Docker (PostgreSQL) https://docs.docker.com/engine/install/ubuntu/
+- Postman https://www.postman.com/downloads/
+- DBeaver https://dbeaver.io/
+- SBT https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html
   
 ### Runs the app
 Type in terminal to start application
