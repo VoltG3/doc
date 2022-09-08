@@ -49,7 +49,7 @@ Open http://localhost:9000 to view it in your browser.
 # ebean-v1.0.0
  - Original source - https://github.com/playframework/play-samples/tree/2.8.x/play-java-ebean-example
 
-   ![step0](ReadMe_img/step0.png) 
+   ![step0](https://github.com/VoltG3/doc/blob/master/readme_img/play_frameworks_ebean/step0.png) 
 
                                                              
 # ebean-v1.0.1
