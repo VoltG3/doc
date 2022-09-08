@@ -1,186 +1,120 @@
-# Spring Boot CRUD - almost tutorial
-Linux / IntelliJ IDEA / Spring Boot / Gradlev / Postgress / Crud
+# Play JAVA EBean - almost tutorial
 
-This is an example Spring Boot application that uses Java, and communicates with an postgres database
+This is an example Play application that uses Java, and communicates with an postgres database an also using in memory database for test purposing via EBean
 
-| Technical information                     |
-| :---------------------------------------- |
-| [Preconditions](#Preconditions)           |
-| [Dependencies](#Dependencies)             |
+Step by step will look at how to add a full chapter and test it 
+
+### Original sources
+>>#### play-java-ebean-example
+>>This is an example Play application that uses Java, and communicates with an in memory database using EBean.
+>>The GitHub location for this project is inside:
+>><https://github.com/playframework/play-samples>
+>>
+>>#### Play
+>>Play documentation is here:
+>>[https://playframework.com/documentation/latest/Home](https://playframework.com/documentation/latest/Home)
+>>
+>>#### EBean
+>>EBean is a Java ORM library that uses SQL:
+>>[https://www.playframework.com/documentation/latest/JavaEbean](https://www.playframework.com/documentation/latest/JavaEbean)
+>>and the documentation can be found here:
+>>[https://ebean-orm.github.io/](https://ebean-orm.github.io/)
+
+### Preconditions:
+  - OpenJDK 11.0.14-zulu
+  - Postgres database via Apache2 localhost or Docker
+  - Any text editor (Visual Studio Code)
+  - SBT https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html
+  
+### Runs the app
+Type in terminal to start application
+```
+$ sbt run
+```
+
+Open http://localhost:9000 to view it in your browser.
 
 ### Versions:
-| Tags               | Changes steps                                                      |
-| :----------------- | :----------------------------------------------------------------- |
-| [biosquare-v0.0](https://github.com/VoltG3/spring_boot_biosquare//releases/tag/biosquare-v3.0) | [empty template](#chapter-biosquare-v00)                                  |
-| [biosquare-v1.0](https://github.com/VoltG3/spring_boot_biosquare/releases/tag/biosquare-v3.0) | [isAppOnloaded controller](#chapter-biosquare-v10) 
-| [biosquare-v2.0](https://github.com/VoltG3/spring_boot_biosquare/releases/tag/biosquare-v3.0) | [liquibase migration](#chapter-biosquare-v20) |
-| [biosquare-v3.0](https://github.com/VoltG3/spring_boot_biosquare/releases/tag/biosquare-v3.0) | [crud](#chapter-biosquare-v30) |
+| Tags         | Operation | Changes steps                                                      |
+| :----------- | :-------: | :----------------------------------------------------------- |
+| [ebean-v1.0.0](https://github.com/VoltG3/ebean/commit/3b4f2534404a0a523e784d85014946f012d11411) | Onload    | [origin source](#ebean-v100)                                               |
+| [ebean-v1.0.1](https://github.com/VoltG3/ebean/commit/7b3f97d1d1991ac7b4a79b357b1abc957536222e) | Updated   | [dependencies to access postgress](#ebean-v101)                             |
+| [ebean-v1.0.2](https://github.com/VoltG3/ebean/commit/63811c1bf2b5502465894b74ef086b050708a51c) | Added     | [chapter Department: 3.sql 4.sql](#ebean-v102)                              |
+| [ebean-v1.0.3](https://github.com/VoltG3/ebean/commit/d5384c20df878d6b15724977786e6d965927278a) | Added     | [chapter Department: models/repository/controller/view/routes](#ebean-v103) |
+| [ebean-v1.0.4](https://github.com/VoltG3/ebean/commit/6da5b207771c73c32f4c13e31bb6b473aa16cf2d) | Added     | [chapter Department: CRUD](#ebean-v104)                                     |
+| [ebean-v1.0.5](https://github.com/VoltG3/ebean/commit/6d9babf4f6891e0008657fea9a4d820902ce7340) | Added     | [chapter Department: button and header](#ebean-v105)                        |
+| [ebean-v1.0.6](https://github.com/VoltG3/ebean/commit/a95fc2206875bb21237b304469a5e0b1d0ed9d8f) | Updated   | [postgresql auto-increment dll](#ebean-v106)                                |
+| [ebean-v1.0.7](https://github.com/VoltG3/ebean/commit/3f645fc00efde415c267277da1dcdc913f27719d) | Added     | [h2 test mode](#ebean-v107)                                                 |
+| [ebean-v1.0.8](https://github.com/VoltG3/ebean/commit/32a34e508a9f5cb7b750ca52121dd2c3824aae28) | Added     | [chapter Department: Model&Functional test](#ebean-v108) |
 
-### CHAPTER biosquare-v0.0
-- [ empty template ] - Project configuration example based on intelliJ IDEA
+# ebean-v1.0.0
+ - Original source - https://github.com/playframework/play-samples/tree/2.8.x/play-java-ebean-example
 
-<table>
-  <tr>
-    <td><img src="https://github.com/VoltG3/doc/blob/master/readme_img/spring_boot_biosquare/img001.png" width="500" alt="img"></td>
-    <td><img src="https://github.com/VoltG3/doc/blob/master/readme_img/spring_boot_biosquare/img002.png" width="500" alt="img"></td>
-  <tr>
- </table>
+   ![step0](ReadMe_img/step0.png) 
 
-### CHAPTER biosquare-v1.0
-- [ isAppOnloaded controller ] - First Controller
- 
-To get response type in browser
-```
-http://localhost:8080/isAppOnloaded
-```
-<table>
-  <tr>
-    <td><img src="https://github.com/VoltG3/doc/blob/master/readme_img/spring_boot_biosquare/img101.png" width="350" alt="img"></td>
-  <tr>
- </table>
+                                                             
+# ebean-v1.0.1
+ - added .gitignore
+ - added Postgresql Driver  
+   https://jdbc.postgresql.org/download.html
+ - added dependencies to access postgress  
+   Access by default can changes inside: <code>&lt;DIR&gt; conf/application.conf</code>  
+    
+   <pre>
+      db.default.driver=org.postgresql.Driver  
+      db.default.url="jdbc:postgresql://localhost:5432/temp0"  
+      db.default.username="postgres"  
+      db.default.password="postgres"  
+   </pre>
    
-### CHAPTER biosquare-v2.0
-- [ liquibase migration ] - Migrate sql scripts
+  - added Evolution autoApplay
+  
+    ![step1](ReadMe_img/step1.png)
+  
+  - create database before executing it!
+
+# ebean-v1.0.2
+  - Added sql scripts for chapter department
+  - The table department should appear in the database
+
+# ebean-v1.0.3
+  - Added chapter Department: models/repository/controller/view/routes
+  - Routes to department table
+  
+    <pre>
+      http<span>://</span>localhost:9000/department
+    </pre>
+    
+    ![step3](ReadMe_img/step3.png)  
+    
+# ebean-v1.0.4
+  - Added chapter Department: CRUD
+ 
+    ![step4a](ReadMe_img/step4a.png)
+ 
+  - Routes to department table
+ 
+    <pre>
+      http<span>://</span>localhost:9000/department
+    </pre>
+    
+# ebean-v1.0.5
+  - Added chapter Department: button/header/message to table header with count of founded items
+  
+    ![step5](ReadMe_img/step5.png)
+ 
+# ebean-v1.0.6
+  - Updated postgresql auto-increment dll to fix id sequently
+  
+    ![step6b](ReadMe_img/step6b.png)
+ 
+# ebean-v1.0.7
+  - Added H2 inMemory database dependencies to execute sql scripts for test purpose. To execute it: 
+    <pre>$ sbt test</pre>
+  
+  - Tips! Run test mode in background
+    <pre>$ sbt ~test</pre>
+    
+# ebean-v1.0.8
+  - Added chapter Department: Model&Functional test
    
-<table>
-  <tr>
-    <td><img src="https://github.com/VoltG3/doc/blob/master/readme_img/spring_boot_biosquare/img201.png" width="1000" alt="img"></td>
-  <tr>
- </table>
- 
- > if this error message, then create directories separately, first "db", then "changelog"
- 
-### CHAPTER biosquare-v3.0
-- [ crud ] - operations
-   
-<table>
-  <tr>
-    <td><img src="https://github.com/VoltG3/doc/blob/master/readme_img/spring_boot_biosquare/img301.png" width="700" alt="img"></td>
-  <tr>
- </table>
- 
-#### Operations examples
-##### HTTP Method GET: all RECORDS
-Request URL:
-```
-http://localhost:8080/biosquares
-```
-Response:
-```JSON
-[
-    {
-        "id": 1,
-        "landcode": "ae",
-        "landname": "United Arab Emirates  ",
-        "region": "africa",
-        "population": 9890402,
-        "landarea": 83.6,
-        "landmap": "https://danoss.no/BioSquare/maps/ae.svg"
-    },
-```
-##### HTTP Method GET: RECORD by ID
-Request URL:
-```
-http://localhost:8080/biosquares/145
-```
-Response:
-```JSON
-{
-    "id": 145,
-    "landcode": "is",
-    "landname": "Iceland",
-    "region": "europa",
-    "population": 341,
-    "landarea": 100.25,
-    "landmap": "https://danoss.no/BioSquare/maps/is.svg"
-}
-```
-##### HTTP Metgod POST: CREATE new RECORD
-Request URL:
-```
-http://localhost:8080/biosquares
-```
-Request:
-```JSON
-{
-    "landcode": "00",
-    "landname": "unknown",
-    "region": "none",
-    "population": 0,
-    "landarea": 0,
-    "landmap": "none"
-}
-```
-Response:
-```JSON
-{
-    "id": 243,
-    "landcode": "00",
-    "landname": "unknown",
-    "region": "none",
-    "population": 0,
-    "landarea": 0.0,
-    "landmap": "none"
-}
-```
-##### HTTP Method PUT: UPDATE RECORD by ID
-Request URL:
-```
-http://localhost:8080/biosquares/243
-```
-Request:
-```JSON
-{
-    "landcode": "00",
-    "landname": "Unknown name",
-    "region": "Unknown",
-    "population": 0,
-    "landarea": 0,
-    "landmap": "Unknown map"
-}
-```
-Response:
-```JSON
-{
-    "id": 243,
-    "landcode": "00",
-    "landname": "Unknown name",
-    "region": "Unknown",
-    "population": 0,
-    "landarea": 0.0,
-    "landmap": "Unknown map"
-}
-```
-##### HTTP Method DELETE: RECORD by ID
-Reques URL:
-```
-http://localhost:8080/biosquares/246
-```
-Response:
-```JSON
-{
-    "deleted": true
-}
-```
-
-
-## Preconditions
-- Linux https://ubuntu.com/
-- IntelliJ IDEA https://www.jetbrains.com/idea/
-- Java https://sdkman.io/
-- Docker https://docs.docker.com/engine/install/ubuntu/
-- Postman https://www.postman.com/downloads/
-- DBeaver https://dbeaver.io/
-
-## Dependencies
-Use Spring initializr https://start.spring.io/ for more info
-- spring-boot-starter-web
-- spring-boot-starter-data-jpa
-- org.liquibase:liquibase-core
-- org.postgresql:postgresql
-- org.projectlombok:lombok
-- org.springframework.boot:spring-boot-devtools
-
-
-
-
