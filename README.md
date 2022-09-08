@@ -35,7 +35,7 @@ Type in terminal to start application
 sbt run
 ```
 
-Open http://localhost:9000 to view it in your browser.
+Open ```http://localhost:9000``` to view it in your browser.
 
 ### Versions:
 | Tags         | Operation | Changes steps                                                      |
@@ -82,7 +82,7 @@ Open http://localhost:9000 to view it in your browser.
 
 # ebean-v1.0.3
   - Added chapter Department: models/repository/controller/view/routes
-  - Routes to department table
+  - Routes to department table URL:
   
     <pre>
       http<span>://</span>localhost:9000/department
