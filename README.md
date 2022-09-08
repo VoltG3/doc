@@ -68,7 +68,7 @@ Open http://localhost:9000 to view it in your browser.
    
   - added Evolution autoApplay
   
-    ![step1](ReadMe_img/step1.png)
+    ![step1](https://github.com/VoltG3/doc/blob/master/readme_img/play_frameworks_ebean/step1.png)
   
   - create database before executing this app!
 
@@ -84,12 +84,12 @@ Open http://localhost:9000 to view it in your browser.
       http<span>://</span>localhost:9000/department
     </pre>
     
-    ![step3](ReadMe_img/step3.png)  
+    ![step3](https://github.com/VoltG3/doc/blob/master/readme_img/play_frameworks_ebean/step3.png)  
     
 # ebean-v1.0.4
   - Added chapter Department: CRUD
  
-    ![step4a](ReadMe_img/step4a.png)
+    ![step4a](https://github.com/VoltG3/doc/blob/master/readme_img/play_frameworks_ebean/step4a.png)
  
   - Routes to department table
  
@@ -100,12 +100,12 @@ Open http://localhost:9000 to view it in your browser.
 # ebean-v1.0.5
   - Added chapter Department: button/header/message to table header with count of founded items
   
-    ![step5](ReadMe_img/step5.png)
+    ![step5](https://github.com/VoltG3/doc/blob/master/readme_img/play_frameworks_ebean/step5.png)
  
 # ebean-v1.0.6
   - Updated postgresql auto-increment dll to fix id sequently
   
-    ![step6b](ReadMe_img/step6b.png)
+    ![step6b](https://github.com/VoltG3/doc/blob/master/readme_img/play_frameworks_ebean/step6b.png)
  
 # ebean-v1.0.7
   - Added H2 inMemory database dependencies to execute sql scripts for test purpose. To execute it: 
