@@ -88,7 +88,7 @@ Response:
 {
     "id": 145,
     "landcode": "is",
-    "landname": "Iceland  ",
+    "landname": "Iceland",
     "region": "europa",
     "population": 341,
     "landarea": 100.25,
