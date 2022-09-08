@@ -100,7 +100,7 @@ Request URL:
 ```
 http://localhost:8080/biosquares
 ```
-Request
+Request:
 ```JSON
 {
     "landcode": "00",
@@ -123,10 +123,38 @@ Response:
     "landmap": "none"
 }
 ```
+##### HTTP Method PUT: UPDATE RECORD by ID
+Request URL:
+```
+http://localhost:8080/biosquares/243
+```
+Request:
+```JSON
+{
+    "landcode": "00",
+    "landname": "Unknown name",
+    "region": "Unknown",
+    "population": 0,
+    "landarea": 0,
+    "landmap": "Unknown map"
+}
+```
+Response:
+```JSON
+{
+    "id": 243,
+    "landcode": "00",
+    "landname": "Unknown name",
+    "region": "Unknown",
+    "population": 0,
+    "landarea": 0.0,
+    "landmap": "Unknown map"
+}
+```
 ##### HTTP Method DELETE: RECORD by ID
 Reques URL:
 ```
-DELETE http://localhost:8080/biosquares/246
+http://localhost:8080/biosquares/246
 ```
 Response:
 ```JSON
@@ -134,8 +162,8 @@ Response:
     "deleted": true
 }
 ```
-##### HTTP Method PUT: UPDATE RECORD by ID
- 
+
+
 ## Preconditions
 - Linux https://ubuntu.com/
 - IntelliJ IDEA https://www.jetbrains.com/idea/
