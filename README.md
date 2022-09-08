@@ -28,7 +28,7 @@ Step by step will look at how to add a full chapter and test it
 ### Runs the app
 Type in terminal to start application
 ```
-$ sbt run
+sbt run
 ```
 
 Open http://localhost:9000 to view it in your browser.
