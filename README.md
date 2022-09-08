@@ -1,12 +1,11 @@
-# Play JAVA EBean - almost tutorial
+# Play JAVA EBean - tutorial
 
-This is an example Play application that uses Java, and communicates with an postgres database an also using in memory database for test purposing via EBean
+This is an example Play application that uses Java and communicates with a postgres database and also uses H2 inMemory database for test purposes via EBean
 
 Step by step will look at how to add a full chapter and test it 
 
 ### Original sources
 >>#### play-java-ebean-example
->>This is an example Play application that uses Java, and communicates with an in memory database using EBean.
 >>The GitHub location for this project is inside:
 >><https://github.com/playframework/play-samples>
 >>
@@ -58,7 +57,7 @@ Open http://localhost:9000 to view it in your browser.
  - added Postgresql Driver  
    https://jdbc.postgresql.org/download.html
  - added dependencies to access postgress  
-   Access by default can changes inside: <code>&lt;DIR&gt; conf/application.conf</code>  
+   Access by default can be changed inside: <code>&lt;DIR&gt; conf/application.conf</code>  
     
    <pre>
       db.default.driver=org.postgresql.Driver  
@@ -71,7 +70,7 @@ Open http://localhost:9000 to view it in your browser.
   
     ![step1](ReadMe_img/step1.png)
   
-  - create database before executing it!
+  - create database before executing this app!
 
 # ebean-v1.0.2
   - Added sql scripts for chapter department
