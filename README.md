@@ -100,14 +100,26 @@ Request URL:
 ```
 http://localhost:8080/biosquares
 ```
-Response:
+Request
 ```JSON
 {
-    "landcode": "zz",
-    "landname": "unknown  ",
+    "landcode": "00",
+    "landname": "unknown",
     "region": "none",
     "population": 0,
     "landarea": 0,
+    "landmap": "none"
+}
+```
+Response:
+```JSON
+{
+    "id": 243,
+    "landcode": "00",
+    "landname": "unknown",
+    "region": "none",
+    "population": 0,
+    "landarea": 0.0,
     "landmap": "none"
 }
 ```
