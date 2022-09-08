@@ -95,7 +95,7 @@ Open http://localhost:9000 to view it in your browser.
  
     ![step4a](https://github.com/VoltG3/doc/blob/master/readme_img/play_frameworks_ebean/step4a.png)
  
-  - Routes to department table
+  - Routes to department table URL:
  
     <pre>
       http<span>://</span>localhost:9000/department
@@ -113,10 +113,10 @@ Open http://localhost:9000 to view it in your browser.
  
 # ebean-v1.0.7
   - Added H2 inMemory database dependencies to execute sql scripts for test purpose. To execute it: 
-    <pre>$ sbt test</pre>
+    <pre>sbt test</pre>
   
   - Tips! Run test mode in background
-    <pre>$ sbt ~test</pre>
+    <pre>sbt ~test</pre>
     
 # ebean-v1.0.8
   - Added chapter Department: Model&Functional test
