@@ -21,16 +21,16 @@ Converting px to vw https://web-development.space/tools/px-to-vw/
 
 
 #### Versions
-`
+```
 portfolio-v1.0 - lite onepage version   
 portfolio-v1.1 - full desktop version
-`
+```
 
 #### Dependencies
-`
+```
 yarn add styled-components  
 yarn add react-router-dom@6
-`
+```
 
 - [styled-components](https://www.npmjs.com/package/styled-components)
 - [react-router-dom@6](https://www.npmjs.com/package/react-router-dom)
